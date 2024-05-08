@@ -9,54 +9,77 @@
     <meta name="author" content="Bruno VSilva">
     <style>
         table {
-          border-collapse: collapse;
-          width: 100%;
+            border-collapse: collapse;
         }
-        
-        th, td {
-          text-align: left;
-          padding: 1em;
+        .grey-line {
+            background-color: rgb(244, 244, 244);
         }
-        
-        tr:nth-child(even) {
-          background-color: #ececec;
+        td {
+            padding:13px;
+            font-size: 11px;
+            font-weight: bold
         }
-        </style>
+        th {
+            text-align: left;
+            font-size: 10px;
+            padding: 10px;
+            color: grey
+        }
+        .uppercase {
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
     <table>
-        <tr style="color: rgb(182, 182, 182)">
-            <th>POS</th>
-            <th>NO</th>
-            <th>DRIVER</th>
-            <th>LAPS</th>
-            <th>TIME/RETIRED</th>
-            <th>PTS</th>
-        </tr>
-        <tr style="color: rgb(56, 56, 56);">
-            <th>1</th>
-            <th>4</th>
-            <th>Norris</th>
-            <th>57</th>
-            <th>1:30:49.876</th>
-            <th>25</th>
-        </tr>
-        <tr style="color: rgb(56, 56, 56)">
-            <th>2</th>
-            <th>11</th>
-            <th>Verstappen</th>
-            <th>57</th>
-            <th>+7.612s</th>
-            <th>18</th>
-        </tr>
-        <tr style="color: rgb(56, 56, 56)">
-            <th>3</th>
-            <th>16</th>
-            <th>Leclerc</th>
-            <th>57</th>
-            <th>+9.920s</th>
-            <th>15</th>
-        </tr>
+        <thead>
+            <tr>
+                <th>
+                    <div style="border-bottom: 1px dotted #000">
+                        POS
+                    </div>
+                </th>
+                <th>NO</th>
+                <th>DRIVER</th>
+                <th>CARS</th>
+                <th>LAPS</th>
+                <th>TIME/RETIRED</th>
+                <th>
+                    <div style="border-bottom: 1px dotted #000">
+                        PTS
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="grey-line">
+                <td>1</td>
+                <td>4</td>
+                <td>Norris</td>
+                <td class="uppercase">McLaren Mercedes</td>
+                <td>57</td>
+                <td>1:30:49.876</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>11</td>
+                <td>Verstappen</td>
+                <td class="uppercase">Red Bull Racing Honda RBPT</td>
+                <td>57</td>
+                <td>+7.612s</td>
+                <td>18</td>
+            </tr>
+            <tr class="grey-line">
+                <td>3</td>
+                <td>16</td>
+                <td>Leclerc</td>
+                <td class="uppercase">Ferrari</td>
+                <td>57</td>
+                <td>+9.920s</th>
+                <td>15</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
